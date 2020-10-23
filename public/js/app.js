@@ -8,7 +8,7 @@ const getWeather  = async (location) =>{
     try{
         display.innerHTML='';
         const res = await axios.get(baseurl+location).then(res=>{
-             console.log(res);
+          
             if(res.data.error){
                     display.innerHTML=res.data.error;
             }else{
