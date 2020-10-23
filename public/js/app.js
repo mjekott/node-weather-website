@@ -2,7 +2,7 @@ const weatherForm = document.querySelector('form');
 const searchTerm = document.querySelector('input');
 const display = document.querySelector('#display')
 
-const baseurl = 'http://localhost:3000/weather?address=';
+const baseurl = '/weather?address=';
 
 const getWeather  = async (location) =>{
     try{
